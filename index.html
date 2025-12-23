@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wink Tetris</title>
+
+  <button id="start">Start camera</button>
+  <div style="position:relative; width:100%; max-width:420px;">
+    <canvas id="game" width="300" height="600" style="width:100%;"></canvas>
+
+    <!-- 必要なら小さく表示。完全に消すより「画面外に置く」のが安定する端末もあります -->
+    <video id="cam" muted playsinline autoplay
+      style="position:absolute; left:-9999px; top:0; width:1px; height:1px;"></video>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</html>
